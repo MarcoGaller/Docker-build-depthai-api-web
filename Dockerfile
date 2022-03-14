@@ -5,8 +5,7 @@ USER root
 ENV TZ="America/New_York"
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 COPY requirements.txt /build/
-RUN sed -i "s/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g" /etc/apt/sources.list \
-    && apt update \
+RUN apt update \
     && apt upgrade -y \
     && apt install python3 git python3-pip libopencv-dev libusb-1.0-0-dev doxygen graphviz clang-11 clang texlive-latex-base texlive-binaries -y \
     && apt install npm -y \
