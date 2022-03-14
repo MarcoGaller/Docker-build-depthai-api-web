@@ -15,7 +15,6 @@ RUN apt install curl -y \
     && apt-get install -y nodejs
 RUN npm install netlify-cli -g
     
-COPY config.json .config/netlify/
 RUN python3 -m pip install -U pip -i https://pypi.tuna.tsinghua.edu.cn/simple \ 
     && python3 -m pip install -r /build/requirements.txt
 
