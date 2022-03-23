@@ -4,7 +4,6 @@ USER root
 
 ENV TZ="America/New_York"
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
-COPY requirements.txt /build/
 RUN apt update \
     && apt upgrade -y \
     && apt install python3 git python3-pip -y \
