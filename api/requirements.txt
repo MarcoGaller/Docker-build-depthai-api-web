@@ -11,3 +11,5 @@ cmake
 opencv-python 
 numpy 
 when-changed
+requests
+hashlib
