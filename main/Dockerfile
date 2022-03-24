@@ -10,7 +10,7 @@ RUN apt update \
     && apt clean 
 
 RUN python3 -m pip install -U pip \
-    && python3 -m pip install sphinx sphinx-rtd-theme requests hashlib
+    && python3 -m pip install sphinx sphinx-rtd-theme requests
 
 RUN useradd -ms /bin/bash ubuntu
 USER ubuntu
