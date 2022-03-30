@@ -5,11 +5,11 @@ USER root
 ENV TZ="America/New_York"
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 COPY requirements.txt /build/
-RUN apt update \
-    && apt upgrade -y \
-    && apt install python3 git python3-pip libopencv-dev libusb-1.0-0-dev doxygen graphviz clang-11 clang texlive-latex-base texlive-binaries clang-format -y \
-    && apt clean 
-
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install python3 git python3-pip libopencv-dev libusb-1.0-0-dev doxygen graphviz clang-11 clang texlive-latex-base texlive-binaries  -y \
+    && apt-get clean 
+RUN apt-get install clang-format -y
 RUN python3 -m pip install -U pip \ 
     && python3 -m pip install -r /build/requirements.txt
 
