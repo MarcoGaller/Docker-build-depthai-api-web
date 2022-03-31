@@ -13,7 +13,7 @@ RUN apt-get update \
     && apt-get clean 
 
 RUN python3 -m pip install -U pip \ 
-    && python3 -m pip install -r /build/requirements.txt
+    && python3 -m pip install -r /build/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 RUN useradd -ms /bin/bash ubuntu
 USER ubuntu
