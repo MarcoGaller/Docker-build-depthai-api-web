@@ -2,7 +2,7 @@ Sphinx==3.4.3
 sphinx-tabs==1.3.0
 sphinx-rtd-theme==0.5.2
 git+https://github.com/VanDavv/rtd-redirects.git
-git+https://github.com/luxonis/pybind11_mkdoc.git@47a353ae22a3ca2fe1ca47f47b38613dcfb1043b
+git+https://github.com/luxonis/pybind11_mkdoc.git
 breathe==4.26.0
 Sphinx-Substitution-Extensions==2020.9.30.0
 sphinx-autopackagesummary==1.3
