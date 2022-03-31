@@ -12,3 +12,4 @@ opencv-python
 numpy 
 when-changed
 requests
+Mypy
